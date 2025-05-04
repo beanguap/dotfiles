@@ -77,7 +77,6 @@ sudo pacman -S --needed - < ~/.config/pkglist.txt
 * [Hyprland](https://github.com/hyprwm/Hyprland)
 * [Starship Prompt](https://starship.rs/)
 * [Arch Wiki](https://wiki.archlinux.org/)
-* [Anuraghazra's GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 
 ````
 
