@@ -1,0 +1,50 @@
+/* Wofi style using custom palette */
+
+window {
+  background-color: #031C07;      /* deep green background */
+  color: #e0e6cb;                 /* soft text */
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0;
+}
+
+#input {
+  background-color: #384F61;      /* dark blue */
+  color: #e0e6cb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  border: 2px solid #054A61;      /* bold blue border */
+}
+
+#entry {
+  background-color: #506770;      /* slate */
+  color: #e0e6cb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  transition: background-color 0.1s ease;
+}
+
+#entry:hover {
+  background-color: #6E857D;      /* mid green/blue */
+}
+
+#entry:selected {
+  background-color: #768D7E;      /* muted highlight */
+  color: #031C07;
+  font-weight: bold;
+}
+
+icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  color: #e0e6cb;
+}
+
+scrollbar slider {
+  background-color: #9FA98D;
+  border-radius: 4px;
+}
