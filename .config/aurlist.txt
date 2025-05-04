@@ -1,0 +1,6 @@
+minecraft-launcher
+themix-theme-oomox-git
+visual-studio-code-bin
+waybar-module-pacman-updates-git
+yay
+yay-debug
