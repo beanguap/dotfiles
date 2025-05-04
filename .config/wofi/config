@@ -1,30 +1,25 @@
 [wofi]
-# ── Invocation & Mode ───────────────────────────
-show            = drun            # launcher for desktop entries
+show            = drun
 mode            = drun
 
-# ── Layout & Sizing ────────────────────────────
 location        = center
 anchor          = center
-width           = 20%             # of screen width
-height          = 30%             # of screen height
+width           = 20%
+height          = 30%
 grid            = true
 columns         = 2
 rows            = 2
 
-# ── Behavior ────────────────────────────────────
 fuzzy           = true
 cycle           = true
 hide-scrollbar  = true
 page-up         = Page_Up
 page-down       = Page_Down
 
-# ── Fonts & Icons ──────────────────────────────
 font            = "JetBrains Mono 12"
 show-icons      = true
 icon-size       = 24
 
-# ── Spacing & Corners ──────────────────────────
 element-height  = 36
 line-height     = 1.4
 indicator-width = 4
@@ -32,5 +27,4 @@ margin          = 16
 border          = 0
 corner-radius   = 12
 
-# ── Style sheet ─────────────────────────────────
 style           = /home/jeri/.config/wofi/style.css

@@ -1,0 +1,12 @@
+# timeout in milliseconds
+default-timeout=5000
+
+# theme colors
+background-color=#1e1e2e80
+text-color=#cdd6f4
+border-color=#f5c2e7
+
+margin=10
+padding=12
+border-size=2
+border-radius=6
