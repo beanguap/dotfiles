@@ -1,27 +1,24 @@
+-- lua/plugins/colorscheme.lua  (Lazy.nvim style)
 return {
-  {
-    "sainnhe/everforest",
-    priority = 1000,
-    config = function()
-      -- Set the Everforest background and other options BEFORE loading the theme
-      vim.g.everforest_background = "hard" -- or "medium", "soft"
-      vim.g.everforest_enable_italic = true
-      vim.g.everforest_disable_italic_comment = false
-      vim.g.everforest_transparent_background = 0 -- set to 1 if you want transparency
+	{
+		"sainnhe/everforest",
+		priority = 1000, -- load first
+		lazy = false, -- don’t defer
+		config = function()
+			-- 1. Tell Vim we want a light UI
+			vim.o.background = "light"
 
-      -- Custom color overrides via highlight groups
-      vim.cmd([[colorscheme everforest]])
+			-- 2. Everforest options BEFORE the colorscheme command
+			vim.g.everforest_background = "soft" -- soft | medium | hard
+			vim.g.everforest_enable_italic = true
+			vim.g.everforest_disable_italic_comment = false
+			vim.g.everforest_transparent_background = 0
 
-      -- Now override specific highlight groups with your custom colors
-      vim.api.nvim_set_hl(0, "Normal", { bg = "#011628", fg = "#CBE0F0" })
-      vim.api.nvim_set_hl(0, "Visual", { bg = "#275378" })
-      vim.api.nvim_set_hl(0, "Search", { bg = "#0A64AC", fg = "#000000" })
-      vim.api.nvim_set_hl(0, "StatusLine", { bg = "#011423", fg = "#CBE0F0" })
-      vim.api.nvim_set_hl(0, "LineNr", { fg = "#627E97" })
-      vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#547998", bg = "#011423" })
-      vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#011423" })
-      vim.api.nvim_set_hl(0, "CursorLine", { bg = "#143652" })
-    end,
-  },
+			-- 3. Load the palette
+			vim.cmd.colorscheme("everforest")
+
+			-- 4. (Optional) tweak single highlights – keep them light-friendly
+			-- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#F2F1EC" })
+		end,
+	},
 }
-
