@@ -18,7 +18,7 @@ return {
 			vim.cmd.colorscheme("everforest")
 
 			-- 4. (Optional) tweak single highlights – keep them light-friendly
-			-- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#F2F1EC" })
+			vim.api.nvim_set_hl(0, "CursorLine", { bg = "#F2F1EC" })
 		end,
 	},
 }

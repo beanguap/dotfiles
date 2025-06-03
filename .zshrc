@@ -17,6 +17,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+
+KITTY_ENABLE_WAYLAND=1 zellij
+
+
 # Starship prompt
 eval "$(starship init zsh)"
 
